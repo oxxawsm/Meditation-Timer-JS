@@ -45,19 +45,30 @@
                 Запустить
             </button>
         </form>
-        <div class="player-container">
-            <audio id="player" src="https://www.chosic.com/wp-content/uploads/2022/07/Ghostrifter-Official-City-Lights.mp3" streamType="mp3"></audio>
-            <div class="player">
-                <div class="control">
-                    <div class="fas fa-play" id="playbtn"></div>
+        <div class="player">
+            <div class="player-wrapper">
+                <div class="details">
+                    <div class="track-name">Track Name</div>
+                    <div class="track-artist">Track Artist</div>
                 </div>
-                <div class="track_info">Ghostriffer Official - City Lights</div>
-                <div class="bar">
-                    <div id="progress"></div>
+
+                <div class="slider_container">
+                    <div class="current-time">00:00</div>
+                     <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+                     <div class="total-duration">00:00</div>
                 </div>
-                <div id="current">0:00</div>
-            </div>
-            
+     
+                <div class="buttons">
+                    <div class="prev-track" onclick="prevTrack()">
+                         <i class="fa fa-step-backward fa-2x"></i>
+                     </div>
+                     <div class="playpause-track" onclick="playpauseTrack()">
+                         <i class="fa fa-play-circle fa-5x"></i>
+                     </div>
+                     <div class="next-track" onclick="nextTrack()">
+                         <i class="fa fa-step-forward fa-2x"></i>
+                     </div>
+                </div>
             </div>
         </div>
     </div>

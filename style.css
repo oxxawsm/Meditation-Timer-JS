@@ -59,7 +59,7 @@ body {
   flex-direction: column;
   padding: 30px 200px;
   border-radius: 8px;
-  gap: 50px;
+  gap: 25px;
 }
 
 .timer {
@@ -133,75 +133,88 @@ body {
   width: 30px;
 }
 
-
-.player-container {
+.player{
+  height: 250px;
+  /* padding: 20px; */
   display: flex;
-  justify-content: center;
   align-items: center;
-  background-color: #202024;
-  color: white;
-}
-
-.player {
-  width: 640px;
-  background-color: #29292e;
-  display: grid;
-  grid-template-columns: 48px 1fr 48px;
-  grid-gap: 16px;
-  padding: 8px 24px;
-  position: relative;
-  border-radius: 64px;
-}
-
-.control, #current {
-  height: 100%;
-  display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: center;
-  padding-block: 16px;
 }
 
-#playbtn {
-  font-size: 24px;
-  color: transparent;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: white;
-  cursor: pointer;
+.details {
+display: flex;
+align-items: center;
+flex-direction: column;
+justify-content: center;
 }
 
-#playbtn:hover {
-  -webkit-text-fill-color: white;
+.track-name {
+font-size: 30px;
 }
 
-.track_info {
-  font-family: "Open Sans", sans-serif;;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 21px;
+.track-artist {
+margin-top: 5px;
+font-size: 15px;
 }
 
-#current {
-  text-align: right;
+.buttons {
+display: flex;
+flex-direction: row;
+align-items: center;
+/* margin-bottom: 30px; */
 }
 
-.bar {
-  --space: 4px; 
-  background-color: #24242424; 
-  overflow: hidden;
-  left: var(--space);
-  right: var(--space);
-  top: var(--space);
-  bottom: var(--space);
-  position: absolute;
-  border-radius: 64px;
-  z-index: -2;
+.active{
+    color: black;
 }
 
-/* #progress {
-  display: flex;
-  width: var(--progress,40%);
-  color: white;
-  transition: all 1s linear;
-  height: 100%;
-} */
+.playpause-track,
+.prev-track,
+.next-track {
+padding: 25px;
+opacity: 0.8;
+transition: opacity .2s;
+}
+
+.playpause-track:hover,
+.prev-track:hover,
+.next-track:hover {
+opacity: 1.0;
+}
+
+.slider_container {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.seek_slider {
+-webkit-appearance: none;
+appearance: none;
+height: 5px;
+background: var(--primary);
+}
+
+.seek_slider::-webkit-slider-thumb {
+-webkit-appearance: none;
+appearance: none;
+width: 15px;
+height: 15px;
+background: var(--primary);
+cursor: grab;
+border-radius: 100%;
+}
+
+.seek_slider:hover {
+opacity: 1.0;
+}
+
+.seek_slider {
+width: 60%;
+}
+
+.current-time,
+.total-duration {
+padding: 10px;
+}
