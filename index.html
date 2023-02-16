@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Таймер для медитации</title>
     <link rel="stylesheet" href="./style.css">
-    <script src="./app.js"></script>
+    <script src="./app.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap" rel="stylesheet">
@@ -16,10 +16,15 @@
         <button class="github-btn">
             <a href="https://github.com/oxxawsm/Meditation-Timer-JS"><img src="./images/github.png" alt="ссылка на мой github" class="github-img"></a>
         </button>
-        <form class="timer">
+        <form class="timer" onsubmit="app.submit(event)">
             <div class="info">
                 Установить медитацию на
-                <input type="number" name="time" aria-label="Количество минут" value="10">
+                <input 
+                type="number" 
+                name="time" 
+                aria-label="Количество минут" 
+                value="10"
+                />
                 минут
             </div>
             <div class="count">
@@ -30,11 +35,10 @@
                 <div class="num" id="sec">0</div>
             </div>
             <button type="submit" class="button">
-                <img src="./images/play.png" alt="play" class="play-image">
+                <img src="./images/play.png" alt="play" class="play-image"/>
                 Запустить
             </button>
         </form>
-        
     </div>
 </body>
 </html>

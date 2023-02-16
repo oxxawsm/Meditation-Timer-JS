@@ -1,122 +1,122 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
-    background: #121214;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    min-height: 100vh;
+  font-family: "Open Sans", sans-serif;
+  background: #121214;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
 }
 
 :root {
-    --primary: #7F6FA0;
-    --anti-accent: #7c7c8a;
+  --primary: #7f6fa0;
+  --anti-accent: #7c7c8a;
 }
 
 .github-btn {
-    background: none;
-    display: flex;
-    border: none;
-    width: 18%;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    font-size: 16px;
-    font-weight: 700;
-    color: white;
-    gap: 10px;
-    padding: 20px;
-    cursor: pointer;
+  background: none;
+  display: flex;
+  border: none;
+  width: 18%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  font-size: 16px;
+  font-weight: 700;
+  color: white;
+  gap: 10px;
+  padding: 20px;
+  cursor: pointer;
 }
 
 .github-img {
-    width: 100%;
+  width: 100%;
 }
 
 .wrapper {
-    background: #202024;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 30px 200px;
-    border-radius: 8px;
-    gap: 50px;
+  background: #202024;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px 200px;
+  border-radius: 8px;
+  gap: 50px;
 }
 
 .timer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 30px;
 }
 
 .info {
-    font-size: 30px;
-    line-height: 160%;
-    font-weight: 700;
+  font-size: 30px;
+  line-height: 160%;
+  font-weight: 700;
 }
 
 .info input {
-    background: none;
-    border: none;
-    width: 40px;
-    padding: 5 px 10px;
-    text-align: center;
-    font-weight: 700;
-    font-size: 30px;
-    color: var(--anti-accent);
+  background: none;
+  border: none;
+  width: 40px;
+  padding: 5 px 10px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 30px;
+  color: var(--anti-accent);
 }
 
 .info input::-webkit-outer-spin-button,
 .info input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 .count {
-    display: flex;
-    gap: 16px;
-    align-items: center;
+  display: flex;
+  gap: 16px;
+  align-items: center;
 }
 
 .num {
-    font-family: 'Roboto Mono', monospace;
-    font-size: 160px;
-    line-height: 1;
-    background: #29292e;
-    padding: 40px 16px;
-    border-radius: 8px;
+  font-family: "Roboto Mono", monospace;
+  font-size: 160px;
+  line-height: 1;
+  background: #29292e;
+  padding: 30px 16px;
+  border-radius: 8px;
 }
 
 .dots {
-    font-family: 'Roboto Mono', monospace;
-    font-size: 160px;
-    color: var(--primary);
+  font-family: "Roboto Mono", monospace;
+  font-size: 160px;
+  color: var(--primary);
 }
 
 .button {
-    background: var(--primary);
-    display: flex;
-    border: none;
-    border-radius: 8px;
-    align-items: center;
-    justify-content: center;
-    font-size: 18px;
-    font-weight: 700;
-    color: white;
-    gap: 10px;
-    padding: 20px;
-    cursor: pointer;
+  background: var(--primary);
+  display: flex;
+  border: none;
+  border-radius: 8px;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
+  gap: 10px;
+  padding: 17px;
+  cursor: pointer;
 }
 
 .play-image {
-    width: 30px;
+  width: 30px;
 }
