@@ -1,4 +1,5 @@
 class App {
+
     timer = {
         min_tens: document.getElementById('min_tens'),
         min: document.getElementById('min'),
@@ -43,7 +44,7 @@ class App {
                 sec_tens: Math.floor((delta % 60000)/ 10000),
                 sec: Math.floor(((delta % 60000)/ 1000) % 10)
             })
-        }, 500)
+        })
     }
 
     #setTimer({ min_tens, min, sec_tens, sec }) {
