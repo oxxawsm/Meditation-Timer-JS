@@ -4,5 +4,5 @@ style="border-width:0" src="https://camo.githubusercontent.com/8935c1c469baaaff5
 <img src='https://user-images.githubusercontent.com/63160594/206897763-ae44cd6c-629f-4fcb-bc38-c39742e51c90.png' width='100'>
 
 # Репозиторий проекта по учебной практике
-## Таймер для медитаций на JavaScript
+## "Таймер для медитаций на JavaScript"
 
